@@ -1,0 +1,26 @@
+{
+  "name": "macy-watchcss",
+  "version": "1.0.0",
+  "description": "Adding watchCSS option to Macy.js. This allows to disable/enable macy using CSS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kubajasiolek/macy.js_watch.git"
+  },
+  "keywords": [
+    "masonry",
+    "layout"
+  ],
+  "author": "Kuba Jasiołek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kubajasiolek/macy.js_watch/issues"
+  },
+  "homepage": "https://github.com/kubajasiolek/macy.js_watch#readme",
+  "dependencies": {
+    "macy": "^2.3.0"
+  }
+}

@@ -1,10 +1,10 @@
 import Macy from 'macy';
 
-const checkBefore = function(el, content) {
-  return (window.getComputedStyle(el, ':after').getPropertyValue('content') == content);
+const checkBefore = (el, content) => {
+  return window.getComputedStyle(el, ':after').getPropertyValue('content') == content;
 }
 
-const checkCSS = function (_this) {
+const checkCSS = (_this) => {
   if (checkBefore(_this.container, '"macy"') && !_this.activeCSS) {
     _this.reInit();
     _this.activeCSS = true;
@@ -14,12 +14,12 @@ const checkCSS = function (_this) {
   }
 };
 
-function Macy_watch(opts) {
+const Macy_watch = (opts) => {
   if (!(this instanceof Macy_watcher)) { return new Macy_watcher(opts); }
 }
 
 class Macy_watcher extends Macy {
-  constructor(opts) {
+  constructor (opts) {
     super(opts);
     this.watchCSS = typeof opts.watchCSS !== 'undefined' ? opts.watchCSS : false;
     this.activeCSS = true;

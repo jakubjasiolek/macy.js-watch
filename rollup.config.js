@@ -7,7 +7,7 @@ let buildObj = {
   entry: 'src/macy-watchcss.js',
   format: 'umd',
   moduleName: 'Macy - watchCSS',
-  banner: '/* Macy.js - watchCSS - v1.0.1 */',
+  banner: '/* Macy.js - watchCSS - v1.0.2 */',
   plugins: [
     eslint(),
     babel(),

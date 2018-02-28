@@ -1,6 +1,6 @@
 {
   "name": "macy-watchcss",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Adding watchCSS option to Macy.js. This allows to disable/enable macy using CSS.",
   "main": "dist/macy-watchcss.js",
   "repository": {

@@ -1,14 +1,14 @@
 import Macy from 'macy';
 
 const checkBefore = (el, content) => {
-  return window.getComputedStyle(el, ':after').getPropertyValue('content') == content;
+  return window.getComputedStyle(el, ':after').getPropertyValue('content').indexOf(content) !== -1;
 }
 
 const checkCSS = (_this) => {
-  if (checkBefore(_this.container, '"macy"') && !_this.activeCSS) {
+  if (checkBefore(_this.container, 'macy') && !_this.activeCSS) {
     _this.reInit();
     _this.activeCSS = true;
-  } else if (!checkBefore(_this.container, '"macy"')) {
+  } else if (!checkBefore(_this.container, 'macy')) {
     _this.remove();
     _this.activeCSS = false;
   }
